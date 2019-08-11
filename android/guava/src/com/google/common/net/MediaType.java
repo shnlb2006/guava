@@ -242,6 +242,20 @@ public final class MediaType {
    */
   public static final MediaType WEBP = createConstant(IMAGE_TYPE, "webp");
 
+  /**
+   * <a href="https://www.iana.org/assignments/media-types/image/heif">HEIF image format</a>.
+   *
+   * @since NEXT
+   */
+  public static final MediaType HEIF = createConstant(IMAGE_TYPE, "heif");
+
+  /**
+   * <a href="https://tools.ietf.org/html/rfc3745">JP2K image format</a>.
+   *
+   * @since NEXT
+   */
+  public static final MediaType JP2K = createConstant(IMAGE_TYPE, "jp2");
+
   /* audio types */
   public static final MediaType MP4_AUDIO = createConstant(AUDIO_TYPE, "mp4");
   public static final MediaType MPEG_AUDIO = createConstant(AUDIO_TYPE, "mpeg");
@@ -425,6 +439,14 @@ public final class MediaType {
    * @since 14.0
    */
   public static final MediaType APPLICATION_BINARY = createConstant(APPLICATION_TYPE, "binary");
+
+  /**
+   * Media type for the <a href="https://tools.ietf.org/html/rfc7946">GeoJSON Format</a>, a
+   * geospatial data interchange format based on JSON.
+   *
+   * @since 28.0
+   */
+  public static final MediaType GEO_JSON = createConstant(APPLICATION_TYPE, "geo+json");
 
   public static final MediaType GZIP = createConstant(APPLICATION_TYPE, "x-gzip");
 
